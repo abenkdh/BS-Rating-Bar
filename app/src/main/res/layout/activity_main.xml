@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    tools:context="com.dn.ratingbar.uc.dn.ratingbar.MainActivity">
+
+    <uc.benkkstudio.ratingbar.CustomRatingBar
+        android:id="@+id/rb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:currentStar="3.5"
+        app:maxStar="5"
+        app:minStar="0.5"
+        app:padding="10dp"
+        app:starTint="@color/colorAccent"
+        app:starHeight="15dp"
+        app:starWidth="15dp"/>
+
+    <uc.benkkstudio.ratingbar.CustomRatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:currentStar="3.5"
+        app:maxStar="5"
+        app:minStar="0.5"
+        app:padding="3dp"
+        app:starHeight="30dp"
+        app:starWidth="30dp"/>
+
+    <uc.benkkstudio.ratingbar.CustomRatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:currentStar="4"
+        app:maxStar="6"
+        app:minStar="1.5"
+        app:padding="3dp"
+        app:starHeight="50dp"
+        app:starWidth="50dp"/>
+
+</LinearLayout>
