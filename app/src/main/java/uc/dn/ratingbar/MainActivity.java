@@ -6,24 +6,18 @@ import android.util.Log;
 
 import com.dn.ratingbar.R;
 
-import uc.benkkstudio.ratingbar.CustomRatingBar;
+import uc.benkkstudio.ratingbar.FlexibleRatingBar;
 
 
-public class MainActivity extends Activity implements CustomRatingBar.OnStarChangeListener {
+public class MainActivity extends Activity{
 
-    protected CustomRatingBar mRb;
+    protected FlexibleRatingBar mRb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mRb = (CustomRatingBar) findViewById(R.id.rb);
-        mRb.setOnStarChangeListener(this);
-        mRb.setTint(getResources().getColor(R.color.colorAccent));
-    }
-
-    @Override
-    public void onStarChange(CustomRatingBar ratingBar, float star) {
-        Log.d("MainActivity", "star:" + star);
+        mRb = findViewById(R.id.flexibleRatingBar);
+        mRb.setRating(3.5f);
     }
 }
